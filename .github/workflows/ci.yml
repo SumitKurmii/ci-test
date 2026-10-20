@@ -1,11 +1,11 @@
-on: 
+name: CI
+on:
   push:
     branches:
       - main
-job:
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "hello from continues integration"
-      
+      - run: echo "hello from continuous integration"
